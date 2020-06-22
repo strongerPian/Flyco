@@ -1,0 +1,1015 @@
+.banner {
+    min-height: 500px;
+    margin-top: 70px;
+    overflow: hidden;
+    img {
+        height: 100%;
+    }
+}
+
+.lunBo {
+    .lbBox {
+        margin: 20px auto;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        height: 460px;
+        ul {
+            // width: 4800px;
+            position: absolute;
+            li {
+                float: left;
+                width: 1200px;
+            }
+        }
+        ol {
+            position: absolute;
+            left: 580px;
+            bottom: 10px;
+            li {
+                list-style: none;
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 100%;
+                background: transparent;
+                opacity: 1;
+                border: 2px solid #fff;
+                margin: 0 4px;
+            }
+            .liActive {
+                background: #26c9c6!important;
+            }
+        }
+    }
+}
+
+
+/* 销量TOP begin*/
+
+.con .conTop {
+    background: #F3F9FB;
+    .topTitle {
+        background: white;
+        p {
+            line-height: 76px;
+            font-size: 20px;
+        }
+    }
+    .topLists {
+        display: flex;
+        justify-content: space-between;
+        ul {
+            margin-top: 10px;
+            li {
+                margin-top: 20px;
+                font-size: 16px;
+                width: 170px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+            .liAct {
+                background: #00A0E9;
+                color: white;
+            }
+        }
+        .listR {
+            width: 960px;
+            height: 560px;
+            // background: palegreen;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            .ag {
+                width: 273px;
+                height: 401px;
+                position: relative;
+                background-repeat: no-repeat;
+                &:first-child {
+                    margin-top: 79px;
+                    &:hover {
+                        margin-top: 74px;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-top: 0;
+                    &:hover {
+                        margin-top: -5px;
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: 109px;
+                    &:hover {
+                        margin-top: 104px;
+                    }
+                }
+                .ag-top {
+                    padding-left: 115px;
+                    margin: 10px 0;
+                }
+                .ag-bottom {
+                    width: 273px;
+                    height: 371px;
+                    cursor: pointer;
+                    background-repeat: no-repeat;
+                    background-color: white;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    .ag-body {
+                        position: relative;
+                        padding: 20px;
+                        color: white;
+                        .ag-body-num {
+                            width: 100%;
+                            height: 59px;
+                            position: absolute;
+                            padding: 0 25px;
+                            box-sizing: border-box;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 24px;
+                            strong {
+                                font-weight: bold;
+                            }
+                        }
+                        .ag-body-img {
+                            width: 210px;
+                            height: 210px;
+                            position: absolute;
+                            top: 71px;
+                            left: 31.5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .ag-body-text {
+                            width: 273px;
+                            height: 80px;
+                            position: absolute;
+                            bottom: -330px;
+                            left: 0px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            h3 {
+                                font-weight: bold;
+                            }
+                            strong {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 销量TOP end*/
+
+
+/* 剃须刀 begin*/
+
+.shaver {
+    .shaTitle {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px;
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #333;
+            margin-left: -40px;
+        }
+        .more {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            color: grey;
+            display: flex;
+            img {
+                margin: 3px 12px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .shaCon {
+        display: flex;
+        justify-content: space-between;
+        .sha-item {
+            width: 224px;
+            height: 380px;
+            box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+            border-radius: 20px;
+            cursor: pointer;
+            &:nth-child(2n-1) {
+                margin-top: 20px;
+                &:hover {
+                    margin-top: 15px;
+                }
+            }
+            &:nth-child(2n) {
+                margin-top: 60px;
+                &:hover {
+                    margin-top: 55px;
+                }
+            }
+            .sha-img {
+                position: relative;
+                .img {
+                    height: 380px;
+                    margin: 0 -80px;
+                }
+                .sha-tag {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    display: flex;
+                }
+            }
+            .sha-sc {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: -22px;
+                left: 50%;
+                margin-left: -20px;
+            }
+            .sha-bottom {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .name {
+                    margin-top: 25px;
+                    font-size: 16px;
+                    color: #000;
+                }
+                .tag {
+                    font-size: 12px;
+                    color: grey;
+                    margin-top: 10px;
+                    width: 224px;
+                    text-align: center;
+                }
+                .sha-price {
+                    color: #f54337;
+                    b {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    span {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 剃须刀 end*/
+
+
+/* 电吹风 begin*/
+
+.hair {
+    margin-top: 200px;
+    width: 100%;
+    height: 480px;
+    .hairBlue {
+        height: 370px;
+        min-width: 1200px;
+        background: #2FBAFB;
+        .hairCon {
+            .shaTitle {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 0;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: white;
+                }
+                .more {
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: white;
+                    display: flex;
+                    img {
+                        margin: 3px 12px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            .hairList {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .hairItem {
+                    border-radius: 20px;
+                    cursor: pointer;
+                    width: 224px;
+                    height: 359px;
+                    background: #fff;
+                    box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+                    position: relative;
+                    &:hover {
+                        margin-top: -8px;
+                        box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
+                    }
+                    .img {
+                        width: 224px;
+                        height: 224px;
+                        background-color: #E6E6E8;
+                        border-radius: 20px 20px 0 0;
+                    }
+                    .itemBottom {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding-bottom: 9px;
+                        height: 120px;
+                        .name {
+                            margin-top: 25px;
+                            font-size: 16px;
+                            color: #000;
+                        }
+                        .tag {
+                            font-size: 12px;
+                            color: grey;
+                            margin-top: 10px;
+                            width: 224px;
+                            display: inline-block;
+                            padding: 0 5px;
+                            box-sizing: border-box;
+                            text-align: center;
+                        }
+                        .hairPrice {
+                            color: #f54337;
+                            b {
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+                            span {
+                                font-weight: bold;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*电吹风 end*/
+
+
+/* 理发器 begin */
+
+.haircut {
+    min-height: 680px;
+    .shaTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .more {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            img {
+                margin: 3px 12px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .cutCons {
+        position: relative;
+        left: -24px;
+        .cutCon {
+            width: 272px;
+            height: 413px;
+            cursor: pointer;
+            &:first-child {
+                top: 7px;
+                left: 0;
+                position: absolute;
+                &:hover {
+                    top: 2px;
+                }
+            }
+            &:nth-child(2) {
+                top: 72px;
+                left: 244px;
+                position: absolute;
+                &:hover {
+                    top: 67px;
+                }
+            }
+            &:nth-child(3) {
+                top: 6px;
+                left: 488px;
+                position: absolute;
+                &:hover {
+                    top: 1px;
+                }
+            }
+            &:nth-child(4) {
+                top: 73px;
+                left: 732px;
+                position: absolute;
+                &:hover {
+                    top: 68px;
+                }
+            }
+            &:nth-child(5) {
+                top: 7px;
+                left: 976px;
+                position: absolute;
+                &:hover {
+                    top: 2px;
+                }
+            }
+            .cutItem {
+                width: 272px;
+                height: 413px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 0 20px 20px;
+                .img {
+                    height: 264px;
+                }
+                .cut-tag {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    img {
+                        margin: 5px;
+                        width: 42px;
+                        height: 42px;
+                    }
+                }
+            }
+            .cut-bottom {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 9px;
+                height: 120px;
+                .name {
+                    font-size: 16px;
+                    color: #000;
+                }
+                .tag {
+                    font-size: 12px;
+                    color: grey;
+                    margin-top: 10px;
+                    width: 224px;
+                    display: inline-block;
+                    padding: 0 5px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+                .price {
+                    color: #f54337;
+                    b {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    span {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*理发器 end*/
+
+
+/* curler begin */
+
+.curler {
+    height: 660px;
+    position: relative;
+    overflow: hidden;
+    .curlerBg {
+        width: 100%;
+        background: #F3F9FB;
+        height: 360px;
+        position: absolute;
+        top: 175px;
+        .shaTitle {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            margin: 0 auto;
+            width: 1200px;
+            position: absolute;
+            top: -147px;
+            left: 0;
+            right: 0;
+            h3 {
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .more {
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                img {
+                    margin: 3px 12px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+        .curCons {
+            margin-top: 30px;
+            position: relative;
+            .curItem {
+                box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+                border-radius: 20px;
+                border: 1px solid #e6e6e6;
+                overflow: hidden;
+                display: flex;
+                cursor: pointer;
+                &:first-child {
+                    position: absolute;
+                    left: 0px;
+                    top: -100px;
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    left: 610px;
+                    top: -100px;
+                }
+                &:nth-child(3) {
+                    position: absolute;
+                    left: 0;
+                    top: 241px;
+                }
+                &:nth-child(4) {
+                    position: absolute;
+                    left: 404px;
+                    top: 241px;
+                }
+                &:nth-child(5) {
+                    position: absolute;
+                    left: 808px;
+                    top: 241px;
+                }
+                &:first-child,
+                &:nth-child(2) {
+                    width: 590px;
+                    height: 320px;
+                    background: #fff;
+                    border-radius: 20px;
+                    &:hover {
+                        top: -105px;
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    width: 390px;
+                    height: 200px;
+                    background: #fff;
+                    border-radius: 20px;
+                    &:hover {
+                        top: 236px;
+                    }
+                    .itemRight {
+                        .name {
+                            margin: 20px 0;
+                        }
+                        .price {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .leftImg {
+                    width: 320px;
+                    height: 320px;
+                    position: relative;
+                    background-color: pink;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .itemRight {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    width: 270px;
+                    box-sizing: border-box;
+                    .name {
+                        font-size: 16px;
+                        margin: 46px 0;
+                        color: #000;
+                        font-weight: 600;
+                    }
+                    .cur-tag {
+                        font-size: 12px;
+                        li {
+                            list-style: circle;
+                            margin-top: 10px;
+                        }
+                    }
+                    .price {
+                        color: #f54337;
+                        margin-top: 60px;
+                        b {
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+                        span {
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*curler end*/
+
+
+/* 毛球修剪器 begin */
+
+.trimmer {
+    height: 720px;
+    .shaTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 15px;
+        h3 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .more {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            img {
+                margin: 3px 12px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .trimCons {
+        left: 2px;
+        position: relative;
+        margin-top: 33px;
+        .trimItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 360px;
+            height: 296px;
+            position: absolute;
+            cursor: pointer;
+            // background-image: url(img/sixbg.png);
+            &:first-child {
+                left: 0px;
+                top: 0px;
+            }
+            &:nth-child(2) {
+                left: 0px;
+                top: 302px;
+            }
+            &:nth-child(3) {
+                left: 276px;
+                top: 150px;
+            }
+            &:nth-child(4) {
+                left: 552px;
+                top: 0px;
+            }
+            &:nth-child(5) {
+                left: 552px;
+                top: 302px;
+            }
+            &:nth-child(6) {
+                left: 828px;
+                top: 150px;
+            }
+            &:hover {
+                .itemText {
+                    display: block;
+                }
+                .itemImg {
+                    width: 240px;
+                    opacity: .2;
+                }
+            }
+            .itemText {
+                position: absolute;
+                // background: white;
+                width: 200px;
+                padding: 12px;
+                z-index: 10;
+                font-size: 14px;
+                display: none;
+                transition: 1s;
+                .name {
+                    font-size: 16px;
+                    color: #000;
+                    margin-left: 30px;
+                }
+                .tag {
+                    font-size: 12px;
+                    color: grey;
+                    margin-top: 10px;
+                    width: 224px;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+                .price {
+                    color: #f54337;
+                    margin-left: 60px;
+                    margin-top: 30px;
+                    b {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    span {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .itemImg {
+                width: 200px;
+                height: 204px;
+                transition: 1s;
+                .img {
+                    width: 100%;
+                }
+                .trim-tag {
+                    position: absolute;
+                    top: 35px;
+                    right: 105px;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+
+/*毛球修剪器end*/
+
+
+/* scene begin */
+
+.scene {
+    margin: 50px auto 20px;
+}
+
+
+/*scene end*/
+
+
+/* bannerother begin */
+
+.bannerother {
+    width: 1240px;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    overflow: hidden;
+    .banCons {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .left,
+        .right {
+            width: 38px;
+            height: 93px;
+            background-color: #EAEAEA;
+            color: white;
+            font-size: 30px;
+            line-height: 93px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        .banCon {
+            width: 1150px;
+            height: 246px;
+            // margin-left: auto;
+            // margin-right: auto;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+            position: relative;
+            .items {
+                display: flex;
+                justify-content: space-between;
+                width: 1342px;
+                height: 246px;
+                position: absolute;
+                top: 0px;
+                left: 1px;
+                .item {
+                    &:nth-child(1) {
+                        .itemImg {
+                            background-color: #FAC6A0;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .itemImg {
+                            background-color: #8CDEDE;
+                        }
+                    }
+                    &:nth-child(3) {
+                        .itemImg {
+                            background-color: #91C5F9;
+                        }
+                    }
+                    &:nth-child(4) {
+                        .itemImg {
+                            background-color: #F1BFFB;
+                        }
+                    }
+                    &:nth-child(5) {
+                        .itemImg {
+                            background-color: #FAC6A0;
+                        }
+                    }
+                    &:nth-child(6) {
+                        .itemImg {
+                            background-color: #97D9AA;
+                        }
+                    }
+                    &:nth-child(7) {
+                        .itemImg {
+                            background-color: #C3B8FB;
+                        }
+                    }
+                    font-size: 16px;
+                    color: #333;
+                    cursor: pointer;
+                    .itemImg {
+                        width: 175px;
+                        height: 175px;
+                        border-radius: 10px;
+                        position: relative;
+                        .img {
+                            max-width: 100%;
+                            min-height: 100%;
+                            position: absolute;
+                            left: 0px;
+                            bottom: -26px;
+                        }
+                        span {
+                            position: absolute;
+                            left: 60px;
+                            bottom: -70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*bannerother end*/
+
+
+/* other begin */
+
+.other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    .other-kefu {
+        width: 121px;
+        height: 120px;
+        border-radius: 15px;
+        margin-left: 20px;
+        flex-direction: column;
+        img {
+            width: 42px;
+            height: 42px;
+            margin: 15px 40px;
+        }
+        span {
+            margin-left: 25px;
+            font-size: 18px;
+            color: #333;
+        }
+        &:hover {
+            box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+        }
+    }
+    .other-call {
+        height: 96px;
+        padding: 0 40px;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        flex-direction: column;
+        margin-left: 41px;
+        justify-content: center;
+        div {
+            display: flex;
+            align-items: center;
+            span {
+                font-size: 16px;
+                margin: 8px 0;
+                &:last-child {
+                    margin-left: 15px;
+                    color: #004898;
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .other-content {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        a {
+            flex-direction: column;
+            position: relative;
+            margin-right: 15px;
+            margin-top: 20px;
+            .img {
+                width: 40px;
+                height: 40px;
+            }
+            .hoverImg {
+                position: absolute;
+                top: 50px;
+                display: none;
+                width: 86px;
+                height: 86px;
+                img {
+                    width: 74px;
+                    height: 74px;
+                    margin-left: -16px;
+                }
+            }
+            &:first-child:hover .hoverImg {
+                display: block;
+            }
+        }
+    }
+}
+
+
+/*other end*/
+
+
+/*animate*/
+
+// .animat{
+//     &:hover{
+//         margin-top: ;
+//     }
+// }
