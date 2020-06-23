@@ -126,7 +126,7 @@ body {
             min-height: 460px;
             background: #fff;
             margin: 0 auto 70px;
-            .listbox {
+            .listItem {
                 width: 275px;
                 height: 422px;
                 border: 1px solid #ebeef5;
@@ -139,7 +139,7 @@ body {
                 &:hover {
                     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
                 }
-                .listimg {
+                .listImg {
                     width: 275px;
                     height: 275px;
                     img {
@@ -153,7 +153,7 @@ body {
                     top: 5px;
                     right: 5px;
                 }
-                .title1 {
+                .title {
                     width: 275px;
                     height: 40px;
                     text-indent: 16px;
@@ -162,7 +162,7 @@ body {
                     line-height: 40px;
                     color: #fff;
                 }
-                .guc {
+                .listName {
                     width: 275px;
                     height: 30px;
                     display: flex;
@@ -176,7 +176,7 @@ body {
                         margin-right: 16px;
                     }
                 }
-                .pp {
+                .price {
                     padding-left: 12px;
                     color: #de3e26;
                     font-size: 15px;

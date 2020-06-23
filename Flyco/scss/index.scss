@@ -92,18 +92,27 @@
                     margin-top: 79px;
                     &:hover {
                         margin-top: 74px;
+                        .ag-bottom {
+                            box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
+                        }
                     }
                 }
                 &:nth-child(2) {
                     margin-top: 0;
                     &:hover {
                         margin-top: -5px;
+                        .ag-bottom {
+                            box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
+                        }
                     }
                 }
                 &:nth-child(3) {
                     margin-top: 109px;
                     &:hover {
                         margin-top: 104px;
+                        .ag-bottom {
+                            box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
+                        }
                     }
                 }
                 .ag-top {
@@ -218,12 +227,14 @@
                 margin-top: 20px;
                 &:hover {
                     margin-top: 15px;
+                    box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
                 }
             }
             &:nth-child(2n) {
                 margin-top: 60px;
                 &:hover {
                     margin-top: 55px;
+                    box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
                 }
             }
             .sha-img {
@@ -600,6 +611,7 @@
                     border-radius: 20px;
                     &:hover {
                         top: -105px;
+                        box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
                     }
                 }
                 &:nth-child(3),
@@ -611,6 +623,7 @@
                     border-radius: 20px;
                     &:hover {
                         top: 236px;
+                        box-shadow: 0 3px 16px rgba(0, 0, 0, .3);
                     }
                     .itemRight {
                         .name {

@@ -1,0 +1,230 @@
+.shopcar {
+    margin-top: 70px;
+    overflow: hidden;
+    .carList {
+        margin: 20px auto 70px;
+        min-height: 220px;
+        // background-color: pink;
+        .listHead {
+            display: flex;
+            align-items: center;
+            width: 1178px;
+            height: 58px;
+            line-height: 60px;
+            background: #f5f5f5;
+            color: #333;
+            font-size: 14px;
+            padding-left: 20px;
+            border: 1px solid #ddd;
+            .headInfo {
+                width: 450px;
+                .label {
+                    cursor: pointer;
+                    input {
+                        color: #606266;
+                        font-size: 14px;
+                        vertical-align: middle;
+                    }
+                    span {
+                        display: inline-block;
+                        padding-left: 16px;
+                        line-height: 19px;
+                        font-size: 14px;
+                    }
+                }
+                .span {
+                    margin-left: 120px;
+                }
+            }
+            .headPrice {
+                display: flex;
+                .listText {
+                    &:nth-child(1) {
+                        width: 180px;
+                        text-align: center;
+                    }
+                    &:nth-child(2) {
+                        width: 220px;
+                        text-align: center;
+                    }
+                    &:nth-child(3) {
+                        width: 200px;
+                        text-align: center;
+                    }
+                    &:nth-child(4) {
+                        width: 70px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .listBody {
+            margin-top: 10px;
+            padding: 20px;
+            width: 1158px;
+            border: 1px solid #ddd;
+            .listItem {
+                padding: 30px 0;
+                border-bottom: 1px dotted #e6e6e6;
+                display: flex;
+                align-items: center;
+                .bodyInfo {
+                    width: 450px;
+                    display: flex;
+                    align-items: center;
+                    label {
+                        color: #606266;
+                        font-size: 14px;
+                        input {
+                            vertical-align: middle;
+                        }
+                    }
+                    .aImg {
+                        margin: 0 25px;
+                        display: flex;
+                        width: 100px;
+                        height: 100px;
+                        justify-content: center;
+                        background-color: #BAB8BB;
+                        .infoImg {
+                            // width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .listText {
+                        width: 256px;
+                        a {
+                            font-size: 18px;
+                            line-height: 42px;
+                            color: #333;
+                        }
+                        span {
+                            font-size: 14px;
+                            color: #666;
+                        }
+                    }
+                }
+                .listPrice {
+                    width: 180px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
+                }
+                .listNums {
+                    width: 220px;
+                    text-align: center;
+                    .listNum {
+                        width: 130px;
+                        line-height: 30px;
+                        position: relative;
+                        display: inline-block;
+                        position: relative;
+                        .sub,
+                        .add {
+                            width: 32px;
+                            font-size: 13px;
+                            position: absolute;
+                            color: #c0c4cc;
+                            text-align: center;
+                            background: #f5f7fa;
+                            top: 1px;
+                            cursor: pointer;
+                        }
+                        .sub {
+                            left: 1px;
+                            border-radius: 4px 0 0 4px;
+                            border-right: 1px solid #dcdfe6;
+                        }
+                        .add {
+                            right: 1px;
+                            border-radius: 0 4px 4px 0;
+                            border-left: 1px solid #dcdfe6;
+                        }
+                        .numInput {
+                            font-size: 13px;
+                            line-height: 30px;
+                            input {
+                                width: 30px;
+                                height: 30px;
+                                line-height: 32px;
+                                padding-left: 39px;
+                                padding-right: 39px;
+                                text-align: center;
+                                border-radius: 4px;
+                                border: 1px solid #dcdfe6;
+                                outline: 0;
+                                padding: 0 15px;
+                            }
+                        }
+                    }
+                }
+                .listPrices {
+                    width: 200px;
+                    text-align: center;
+                }
+                .listText {
+                    width: 70px;
+                    text-align: center;
+                    a {
+                        color: #f56c6c;
+                    }
+                }
+            }
+        }
+        .listFoot {
+            display: flex;
+            width: 1158px;
+            height: 58px;
+            background: #f5f5f5;
+            padding: 0 20px;
+            border: 1px solid #ddd;
+            margin: 10px 0 20px;
+            align-items: center;
+            justify-content: space-between;
+            .footLeft {
+                label {
+                    span {
+                        display: inline-block;
+                        padding-left: 10px;
+                        line-height: 19px;
+                        font-size: 14px;
+                    }
+                }
+                a {
+                    margin-left: 20px;
+                    color: #f56c6c;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .footRight {
+                display: flex;
+                margin: 0 20px 0 40px;
+                .priceAll {
+                    .priceText {
+                        color: #333;
+                        font-size: 14px;
+                        margin-right: 40px;
+                        font-weight: 700;
+                    }
+                    .amount {
+                        color: #dc3d26;
+                        font-size: 24px;
+                        margin-right: 20px;
+                    }
+                }
+                .js {
+                    width: 110px;
+                    height: 40px;
+                    background-color: #de3e26!important;
+                    color: #fff!important;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,378 @@
+#shopping {
+    margin-top: 90px;
+    height: 700px;
+    // background-color: pink;
+    .shopTitle {
+        margin: 20px 0;
+        font-size: 14px;
+        color: #606266;
+        span {
+            margin-right: 10px;
+            a {
+                margin-right: 10px;
+                color: #606266;
+                &:hover {
+                    color: #1FA4DA;
+                }
+            }
+        }
+    }
+    .shop {
+        height: 511px;
+        display: flex;
+        .shopLeft {
+            width: 430px;
+            margin-right: 40px;
+            .shopImg {
+                width: 431px;
+                height: 431px;
+                box-sizing: border-box;
+                border: 1px solid #dcdfe6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                position: relative;
+                .small {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    background-color: #BAB8BB;
+                    .img {
+                        height: 100%;
+                    }
+                    .mark {
+                        width: 143px;
+                        height: 143px;
+                        left: 0px;
+                        top: 0px;
+                        display: none;
+                        position: absolute;
+                        background-color: rgba(0, 0, 0, .5);
+                        cursor: move;
+                    }
+                }
+                .big {
+                    position: absolute;
+                    width: 429px;
+                    height: 429px;
+                    background-color: #BAB8BB !important;
+                    left: 431px;
+                    overflow: hidden;
+                    display: none;
+                    left: 430px;
+                    z-index: 20;
+                    img {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        height: 300%;
+                        // margin-left: 338px;
+                    }
+                }
+            }
+            .bottomImg {
+                position: relative;
+                height: 70px;
+                .imgLeft,
+                .imgRight {
+                    position: absolute;
+                    height: 70px;
+                    width: 15px;
+                    background-color: #E9E9E9;
+                    color: #D8D8D8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+                .imgLeft {
+                    left: 1px;
+                }
+                .imgRight {
+                    right: 1px;
+                    top: 0px;
+                }
+                .imgCenter {
+                    margin-left: 20px;
+                    // margin-right: auto;
+                    width: 391px;
+                    height: 70px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    position: relative;
+                    overflow: hidden;
+                    list-style: none;
+                    padding: 0;
+                    z-index: 1;
+                    .imgItems {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        display: flex;
+                        box-sizing: content-box;
+                        .imgItem {
+                            width: 70px;
+                            height: 70px;
+                            margin-right: 10px;
+                            cursor: pointer;
+                            border: 2px solid #dcdfe6;
+                            box-sizing: border-box;
+                            img {
+                                // width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .shopRight {
+            width: 730px;
+            .infoTitle {
+                font-size: 20px;
+                color: #333;
+                font-weight: 700;
+                margin-bottom: 3px;
+                height: 27px;
+                line-height: 27px;
+            }
+            .desc {
+                color: #999;
+                font-size: 14px;
+                margin: 0 0 3px 0;
+                line-height: 20px;
+            }
+            .infoTime {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 20px;
+                color: #fff;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                background: linear-gradient(180deg, #d1b874, #dec583);
+                justify-content: flex-start;
+                font-size: 15px;
+            }
+            .infoItem {
+                display: flex;
+                width: 730px;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                .infoItemL {
+                    display: flex;
+                    align-items: center;
+                    width: 565px;
+                    .infoName {
+                        font-size: 14PX;
+                        color: #666;
+                        width: 45px;
+                        margin-right: 20px;
+                    }
+                    .symble {
+                        font-size: 20px;
+                        color: #de3e26;
+                        margin-right: 5px;
+                    }
+                    .infoPrice {
+                        font-size: 32px;
+                        color: #de3e26;
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+                    .originaPrice {
+                        color: #666;
+                        font-size: 14px;
+                        text-decoration: line-through;
+                    }
+                }
+                .infoItemR {
+                    display: flex;
+                    align-items: center;
+                    width: 165px;
+                    border-left: 1px solid #ccc;
+                    span {
+                        margin-left: 30px;
+                        color: #333;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .infoService {
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                .infoSerL {
+                    .infoName {
+                        font-size: 14PX;
+                        color: #666;
+                        width: 45px;
+                        margin-right: 20px;
+                    }
+                }
+                .infoSerR {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    .SRItem {
+                        margin: 0 0 5px 0;
+                        width: 165px;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 5px;
+                        }
+                        span {
+                            color: #333;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .infoLimit {
+                color: #333;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .infoName {
+                    color: #666;
+                    width: 45px;
+                    margin-right: 20px;
+                }
+            }
+            .infoSpe {
+                width: 565px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 20px;
+                .speL {
+                    .infoName {
+                        font-size: 14PX;
+                        color: #666;
+                        width: 45px;
+                        margin-right: 20px;
+                    }
+                }
+                .speR {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    border: 1px solid #de3e26;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+            .infoNum {
+                width: 730px;
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                .numL {
+                    .infoName {
+                        font-size: 14PX;
+                        color: #666;
+                        width: 45px;
+                        margin-right: 20px;
+                    }
+                }
+                .numR {
+                    width: 130px;
+                    line-height: 30px;
+                    display: inline-block;
+                    position: relative;
+                    .sub,
+                    .add {
+                        width: 32px;
+                        font-size: 18px;
+                        color: #c0c4cc;
+                        // cursor: not-allowed;
+                        cursor: pointer;
+                        position: absolute;
+                        // z-index: 1;
+                        // top: 1px;
+                        height: auto;
+                        text-align: center;
+                        background: #f5f7fa;
+                        border-radius: 4px 0 0 4px;
+                        // border-right: 1px solid #dcdfe6;
+                    }
+                    .sub {
+                        left: 1px;
+                    }
+                    .add {
+                        right: 1px;
+                    }
+                    .num {
+                        position: absolute;
+                        top: -1.5px;
+                        left: 30px;
+                        display: block;
+                        width: 66px;
+                        font-size: 13px;
+                        height: 30px;
+                        line-height: 32px;
+                        // padding-left: 39px;
+                        // padding-right: 39px;
+                        text-align: center;
+                        border-radius: 4px;
+                        border: 1px solid #dcdfe6;
+                        // border: none;
+                    }
+                }
+            }
+            .infoBuy {
+                display: flex;
+                width: 730px;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                .addCar,
+                .byNow {
+                    width: 150px;
+                    height: 50px;
+                    font-size: 18px;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    padding: 12px 20px;
+                    cursor: pointer;
+                    border: 1px solid #de3e26!important;
+                    outline: blue;
+                }
+                .addCar {
+                    background-color: #fbe3df!important;
+                    color: #de3e26!important;
+                }
+                .byNow {
+                    background-color: #de3e26!important;
+                    color: #fff!important;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

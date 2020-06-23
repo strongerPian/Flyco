@@ -11,8 +11,12 @@ $(function() {
         }
     })
     $(".fixedTop").click(function() {
-        $(window).scrollTop(0);
+        $("html,body").animate({
+            scrollTop: 0
+        })
     })
+
+
 
     /* headList*/
     $.ajax({
@@ -21,8 +25,6 @@ $(function() {
         success: function(resp) {
             var str = ''
             resp.headList.forEach((item, i) => {
-                // console.log(item.id)
-
                 str += `
                         <a href="html/list.html?id=${item.id}" class="item" data-id="${item.id}">
                             <img src="${item.img}" alt="">
@@ -32,14 +34,13 @@ $(function() {
             $(".listItems").html(str)
         }
     });
+
     $.ajax({
         type: "get",
         url: "../data/data.json",
         success: function(resp) {
             var str = ''
             resp.headList.forEach((item, i) => {
-                // console.log(item.id)
-
                 str += `
                         <a href="javascript:;" class="item" data-id="${item.id}" >
                             <img src="../${item.img}" alt="">
@@ -101,6 +102,7 @@ $(function() {
         })
     } //切换，单独封装成函数
 
+
     /* 销量 TOP */
     $(".topLists ul").find("li").mouseenter(function() {
         $(this).addClass("liAct").siblings().removeClass("liAct")
@@ -108,12 +110,10 @@ $(function() {
             type: "get",
             url: "data/data.json",
             success: (data) => {
-                // console.log(data.length)
                 let b = 1;
                 let str = "";
                 for (var i = $(this).index() * 3; i < ($(this).index() + 1) * 3; i++) {
-
-                    str += `<div class="ag animate">
+                    str += `<div class="ag animate" data-id="${data.topList[i].productSn}">
                         <div class="ag-top">
                             <img src="img/t${b}.png" alt="">
                         </div>
@@ -136,11 +136,21 @@ $(function() {
                     </div>`
                     b++
                 };
-                console.log($(this).index() * 3)
                 $(".listR").html(str)
+
+                /*点击跳转详情页 */
+                $(".animate").click($reload)
+
             }
         })
     })
+
+    /*封装点击跳转详情页 */
+    $reload = function() {
+        $attr = $(this).attr("data-id")
+        console.log($attr)
+        window.location = "html/item.html?id=" + $attr
+    }
 
 
     /*剃须刀 */
@@ -151,13 +161,13 @@ $(function() {
             // console.log(resp.shaver)
             var str = ''
             resp.shaverList.forEach((item, i) => {
-                str += ` <div class="sha-item  animate">
+                str += ` <div class="sha-item  animate" data-id="${item.productSn}">
                 <div class="sha-img">
                     <img src="${item.pic}" alt="" class="img">
                     <div class="sha-tag">
                         <img src="img/new.png" alt="">
                     </div>
-                    <div class="sha-sc" data-id="${item.id}">
+                    <div class="sha-sc"  data-id="${item.productSn}">
                         <img src="img/redsc.png" alt="">
                     </div>
                 </div>
@@ -171,6 +181,10 @@ $(function() {
             </div>`
             })
             $(".shaCon").html(str)
+
+            /*点击跳转详情页 */
+            $(".animate").click($reload)
+
         }
     });
 
@@ -182,7 +196,7 @@ $(function() {
             // console.log(resp.shaver)
             var str = ''
             resp.hairList.forEach((item, i) => {
-                str += `  <div class="hairItem animate">
+                str += `  <div class="hairItem animate" data-id="${item.productSn}">
                 <img src="${item.pic}" alt="" class="img">
                 <div class="itemBottom">
                     <span class="name">${item.name}</span>
@@ -195,6 +209,10 @@ $(function() {
             </div>`
             })
             $(".hairList").html(str)
+
+            /*点击跳转详情页 */
+            $(".animate").click($reload)
+
         }
     });
 
@@ -208,7 +226,7 @@ $(function() {
             // console.log(resp.shaver)
             var str = ''
             resp.shaverList.forEach((item, i) => {
-                str += ` <div class="cutCon animate">
+                str += ` <div class="cutCon animate" data-id="${item.productSn}">
                 <div class="cutItem" style="background-image: url('img/bg~.png');">
                     <img src="${item.pic}" alt="" class="img">
                     <div class="cut-tag">
@@ -225,6 +243,10 @@ $(function() {
             </div>`
             })
             $(".cutCons").html(str)
+
+            /*点击跳转详情页 */
+            $(".animate").click($reload)
+
         }
     });
     /*烫发器 */
@@ -235,7 +257,7 @@ $(function() {
             // console.log(resp.shaver)
             var str = ''
             resp.curlerList.forEach((item, i) => {
-                str += `<div class="curItem animate">
+                str += `<div class="curItem animate" data-id="${item.productSn}">
                 <div class="leftImg">
                     <img src="${item.pic}" alt="">
                 </div>
@@ -254,6 +276,10 @@ $(function() {
             })
 
             $(".curCons").html(str)
+
+            /*点击跳转详情页 */
+            $(".animate").click($reload)
+
         }
     });
 
@@ -265,7 +291,7 @@ $(function() {
             // console.log(resp.shaver)
             var str = ''
             resp.trimmerList.forEach((item, i) => {
-                str += `<div class="trimItem" style=" background-image: url(img/sixbg.png);">
+                str += `<div class="trimItem animate" data-id="${item.productSn}" style=" background-image: url(img/sixbg.png);">
             <div class="itemText">
                 <span class="name">${item.name}</span>
                 <span class="tag">${item.subTitle}</span>
@@ -283,6 +309,11 @@ $(function() {
             })
 
             $(".trimCons").html(str)
+
+
+            /*点击跳转详情页 */
+            $(".animate").click($reload)
+
         }
     });
 
@@ -292,7 +323,6 @@ $(function() {
             left: -193
         }, 500)
     })
-
     $(".right").click(() => {
         $(".items").animate({
             left: 1
@@ -304,15 +334,7 @@ $(function() {
 
 
 
-    /*animate */
 
-    // $(".animate").hover(function() {
-    //     $marginTop = $(this).outerHeight(true) - $(this).outerHeight()
-    //     $(this).css("margin-top", $marginTop - 7)
-    // }, function() {
-    //     $marginTop = $(this).outerHeight(true) - $(this).outerHeight()
-    //     $(this).css("margin-top", $marginTop + 7)
-    // })
 
 
     /*列表页  list.html */
@@ -336,26 +358,32 @@ $(function() {
             // console.log(data)
             var str = ''
             resp.list.forEach((item, i) => {
-                str += `<div class="list">
-                <div class="listbox">
-                    <div class="listimg">
-                        <img src="${item.pic}" alt="">
-                    </div>
+                str += `
+                    <div class="listItem animateList" data-id="${item.productSn}">
+                        <div class="listImg">
+                            <img src="${item.pic}" alt="">
+                        </div>
                     <div class="tag">
                         <img src="../img/new.png" alt="">
                     </div>
-                    <span class="title1">
+                    <span class="title">
                         ${item.description}
                     </span>
-                    <div class="guc" data-id="${item.id}">
+                    <div class="listName" data-id="${item.id}">
                         <span> ${item.name} </span>
                         <img src="../img/bluesc.png" alt="">
                     </div>
-                    <p class="pp">￥ ${item.price}</p>
-                </div>
-            </div>`
+                    <p class="price">￥ ${item.price}</p>
+                    </div>`
             })
             $(".lists").html(str)
+
+            /*点击跳转详情页 */
+            $(".animateList").click(function() {
+                $attr = $(this).attr("data-id")
+                console.log($attr)
+                window.location = "item.html?id=" + $attr
+            })
         }
     });
 })
