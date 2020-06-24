@@ -42,7 +42,7 @@ $(function() {
             var str = ''
             resp.headList.forEach((item, i) => {
                 str += `
-                        <a href="javascript:;" class="item" data-id="${item.id}" >
+                        <a href="list.html" class="item" data-id="${item.id}" >
                             <img src="../${item.img}" alt="">
                             <p>${item.name}</p>
                         </a>`
@@ -384,6 +384,8 @@ $(function() {
                 console.log($attr)
                 window.location = "item.html?id=" + $attr
             })
+
+
         }
     });
 })

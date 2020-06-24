@@ -10,6 +10,12 @@ $(function() {
             success: function(resp) {
                 console.log(resp)
                 if (resp.code === 1) {
+                    $info = JSON.stringify({
+                        id: resp.data.id,
+                        username: resp.data.username,
+                        token: resp.data.token
+                    })
+                    localStorage.setItem('flyco', $info)
                     alert(`${resp.msg}，即将返回首页`)
                     location.replace('../index.html')
                 } else {

@@ -127,7 +127,6 @@ $(function() {
             $("#shopping").html(str)
 
             /*title */
-
             $("head").find("title").text(`飞科${shop.name}产品选购——飞科电器官网 - 飞科电器自营官方商城`)
 
             /*放大镜 */
@@ -156,17 +155,98 @@ $(function() {
                         top: -3 * top
                     })
                 })
-                /*bottomImg */
+
+            /*bottomImg */
             $(".imgItem").find("img").hover(function() {
                 $img = $(this).attr("src")
                 $(".big").find(".img").attr("src", $img)
                 $(".small").find(".img").attr("src", $img)
             })
 
+
+
+
+
+            //点击按钮
+            $(".add").click(function() {
+                $num = Number($(".num").val())
+                $(".num").val(++$num)
+            })
+
+            $(".sub").click(function() {
+                $num = Number($(".num").val())
+                if ($num <= 1) {
+                    $(".num").val(1)
+                    return
+                }
+                $(".num").val(--$num)
+            })
+
+            $(".num").change(function(e) {
+                if (Number($(".num").val()) <= 1) {
+                    $(".num").val(1)
+                }
+                e.preventDefault();
+            });
+
+
+            $(".addCar").click(saveData)
+
+            /*添加购物车 */
+            $data = JSON.parse(localStorage.getItem("flyco"))
+            console.log($data)
+
+            //封装点击添加购物车
+
+
+            function saveData() {
+
+                $.ajax({
+                    type: "get",
+                    url: "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=" + $data.id,
+                    success: function(resp) {
+                        console.log(resp.data)
+
+                        var str = ""
+                        resp.data.forEach((item, i) => {
+                            console.log(item.pdesc)
+                        })
+                    }
+                })
+
+
+
+                $shop = {
+                    pid: shop.productSn,
+                    pimg: shop.pic,
+                    pname: JSON.stringify([shop.name, shop.subTitle]),
+                    pprice: shop.promotionPrice,
+                    pdesc: $(".num").val(),
+                    uid: $data.id,
+                };
+
+
+                console.log($shop)
+
+
+                $.getJSON("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", $shop,
+                    function(data, textStatus, jqXHR) {
+                        console.log(data)
+                    }
+                );
+            }
+
+
+            /*shopcar */
+            // $.ajax({
+            //     type: "get",
+            //     url: "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=" + $data.id,
+            //     success: function(resp) {
+            //         console.log(resp)
+            //     }
+            // });
+
         }
-
-
-
     });
 
 })
