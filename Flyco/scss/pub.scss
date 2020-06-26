@@ -123,6 +123,38 @@ header {
                     padding: 0 30px 0 15px;
                     width: 100%;
                 }
+                &:nth-child(5) {
+                    position: relative;
+                    .login {
+                        position: absolute;
+                        top: 59px;
+                        left: -30px;
+                        width: 150px;
+                        min-height: 80px;
+                        background-color: white;
+                        font-size: 14px;
+                        text-align: center;
+                        display: none;
+                        box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+                        .loginOn {
+                            display: block;
+                        }
+                        .loginOff {
+                            display: none;
+                            b {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    .islogin {
+                        .loginOn {
+                            display: none;
+                        }
+                        .loginOff {
+                            display: block;
+                        }
+                    }
+                }
             }
         }
     }

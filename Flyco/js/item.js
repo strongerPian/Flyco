@@ -1,6 +1,6 @@
 $(function() {
-    var id = location.search.split('=')[1]
-        // console.log(id)
+    var pid = location.search.split('=')[1]
+        // console.log(pid)
     $.ajax({
         type: "get",
         url: "../data/data.json",
@@ -8,7 +8,7 @@ $(function() {
             var newArr = []
             for (var key in resp) {
                 for (var i = 0; i < resp[key].length; i++) {
-                    if (resp[key][i].productSn == id) {
+                    if (resp[key][i].productSn == pid) {
                         newArr.push(resp[key][i])
                         break
                     }
@@ -167,7 +167,7 @@ $(function() {
 
 
 
-            //点击按钮
+            //点击按钮加减改
             $(".add").click(function() {
                 $num = Number($(".num").val())
                 $(".num").val(++$num)
@@ -190,63 +190,54 @@ $(function() {
             });
 
 
-            $(".addCar").click(saveData)
 
             /*添加购物车 */
-            $data = JSON.parse(localStorage.getItem("flyco"))
+            $data = JSON.parse(localStorage.getItem("flyco")) //登录数据
             console.log($data)
 
-            //封装点击添加购物车
-
-
-            function saveData() {
-
-                $.ajax({
-                    type: "get",
-                    url: "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=" + $data.id,
-                    success: function(resp) {
-                        console.log(resp.data)
-
-                        var str = ""
-                        resp.data.forEach((item, i) => {
-                            console.log(item.pdesc)
-                        })
-                    }
-                })
 
 
 
-                $shop = {
-                    pid: shop.productSn,
-                    pimg: shop.pic,
-                    pname: JSON.stringify([shop.name, shop.subTitle]),
-                    pprice: shop.promotionPrice,
-                    pdesc: $(".num").val(),
-                    uid: $data.id,
-                };
+
+            let cart = new Cart()
+            $(".addCar").click(() => {
+                cart.saveData(pid, Number($(".num").val()), false)
+            })
 
 
-                console.log($shop)
-
-
-                $.getJSON("http://jx.xuzhixiang.top/ap/api/goods/goods-add.php", $shop,
-                    function(data, textStatus, jqXHR) {
-                        console.log(data)
-                    }
-                );
-            }
-
-
-            /*shopcar */
-            // $.ajax({
-            //     type: "get",
-            //     url: "http://jx.xuzhixiang.top/ap/api/productlist.php?uid=" + $data.id,
-            //     success: function(resp) {
-            //         console.log(resp)
-            //     }
-            // });
 
         }
     });
+
+    // class Cart {
+    //     constructor() {
+    //         this.shop = localStorage.getItem($data.id) ? JSON.parse(localStorage.getItem($data.id)) : {}
+    //     }
+    //     saveData(pid, num) {
+    //         //判断是否登录
+    //         if ($data) {
+    //             console.log("已登录")
+    //                 //找到对应的登录账号
+    //                 //判断是否是第一次添加商品
+    //             this.shop = localStorage.getItem($data.id) ? JSON.parse(localStorage.getItem($data.id)) : {}
+    //             if (!this.shop[pid]) {
+    //                 this.shop[pid] = Number($(".num").val())
+
+    //             } else {
+
+    //                 this.shop[pid] += Number($(".num").val())
+    //             }
+    //             console.log(this.shop)
+    //                 // $shop = JSON.stringify({
+    //                 //     id: pid,
+    //                 //     num: $(".num").val()
+    //                 // })
+    //             localStorage.setItem($data.id, JSON.stringify(this.shop))
+
+
+    //         }
+    //     }
+    // }
+
 
 })

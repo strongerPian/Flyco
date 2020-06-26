@@ -59,6 +59,29 @@ $(function() {
     })
 
 
+    /*判断登录状态*/
+    $data = JSON.parse(localStorage.getItem("flyco"))
+    if ($data) {
+
+        // user.classList.add('islogin')
+        // b.innerHTML = username
+
+        $(".login").addClass("islogin")
+        $(".loginOff").find("b").text($data.username)
+    }
+    $(".exit").click(function() {
+        localStorage.removeItem('flyco')
+        $(".login").removeClass("islogin")
+    })
+
+    $(".loreg").mouseover(function() {
+        $(".login").show()
+    }).mouseleave(() => {
+        $(".login").hide()
+    })
+
+
+
     /*轮播图*/
     $("#play ul li:first").clone(true).appendTo('#play ul') //在图片末尾追加第一张图片
     $("#play ul").css({
@@ -328,6 +351,14 @@ $(function() {
             left: 1
         }, 500)
     })
+
+    //剃须刀点击加入购物车(触发了跳转事件)
+    // $(".sha-sc").click(function() {
+    //     $pid = $(this).attr("data-id")
+    //     console.log($pid)
+    // })
+
+
 
 
 

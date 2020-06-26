@@ -19,15 +19,26 @@
                 <li><a href="../index.html">首页</a></li>
                 <li class="liHover"><a href="javascript:;">产品分类</a></li>
                 <li><input type="text" autocomplete="off" placeholder="剃须刀"></li>
-                <li>
+                <li class="shopCar">
                     <a href="">
                         <img src="../img/sc1.png" alt="">
                     </a>
                 </li>
-                <li>
+                <li class="loreg">
                     <a href="../html/login.html">
                         <img src="../img/my.png" alt="">
                     </a>
+                    <!-- 登录注册 -->
+                    <div class="login">
+                        <div class="loginOn">
+                            <p><a href="login.html">登录</a></p>
+                            <p><a href="register.html">注册</a></p>
+                        </div>
+                        <div class="loginOff">
+                            <p><a href="javascript:;">欢迎您，<b></b></a></p>
+                            <p class="exit"><a href="javascript:;">退出</a></p>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -81,34 +92,34 @@
             </div>
             <div class="listBody">
 
-                <!-- <div class="listItem">
-                    <div class="bodyInfo">
-                        <label for="">
+                <!-- <div class="listItems">
+                    <div class="listItem">
+                        <div class="bodyInfo">
+                            <label for="">
                             <input type="checkbox" name="" id="" class="check">
                         </label>
-                        <a href="" class="aImg">
-                            <img src="../img/shaver1.png" alt="" class="infoImg">
-                        </a>
-                        <div class="listText">
-                            <a href="">理发器FC1</a><br>
-                            <span>微调剪发长度 / 可替换定长梳 / 充插两用</span>
-                        </div>
-                    </div>
-                    <div class="listPrice"><span>￥75.00</span> </div>
-                    <div class="listNums">
-                        <div class="listNum">
-                            <span class="sub">-</span>
-                            <div class="numInput">
-                                <input type="text" class="num" value="1">
+                            <a href="" class="aImg">
+                                <img src="../img/shaver1.png" alt="" class="infoImg">
+                            </a>
+                            <div class="listText">
+                                <a href="">理发器FC1</a><br>
+                                <span>微调剪发长度 / 可替换定长梳 / 充插两用</span>
                             </div>
-                            <span class="add">+</span>
                         </div>
-                    </div>
-                    <div class="listPrices"><span>￥75.00</span> </div>
-                    <div class="listText">
-                        <a href="">
-                            <span class="del">删除</span>
-                        </a>
+                        <div class="listPrice"><span>￥75.00</span> </div>
+                        <div class="listNums">
+                            <div class="listNum">
+                                <span class="sub">-</span>
+                                <input type="text" class="num" value="1">
+                                <span class="add">+</span>
+                            </div>
+                        </div>
+                        <div class="listPrices"><span>￥75.00</span> </div>
+                        <div class="listText">
+                            <a href="">
+                                <span class="del">删除</span>
+                            </a>
+                        </div>
                     </div>
                 </div> -->
 
@@ -119,12 +130,12 @@
                             <input type="checkbox" name="" id="" class="checkAll">
                             <span>全选</span>
                         </label>
-                    <a href="" class="delAll">批量删除</a>
+                    <a href="javascript:;" class="delAll">批量删除</a>
                 </div>
                 <div class="footRight">
                     <div class="priceAll">
-                        <span class="priceText">应付金额</span>
-                        <span class="amount">￥260.00</span>
+                        <span class="priceText">应付金额</span> ￥
+                        <span class="amount">0.00</span>
                     </div>
                     <button class="js">
                             结算 <span>(4)</span>
@@ -188,7 +199,10 @@
     <script src="../js/index.js"></script>
     <script src="../js/item.js"></script>
     <script src="../js/shopcar.js"></script>
-
+    <script src="../js/cartdata.js"></script>
+    <script>
+        let cart = new Cart()
+    </script>
 </body>
 
 </html>
