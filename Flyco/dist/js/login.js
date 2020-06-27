@@ -13,7 +13,6 @@ $(function() {
                     $info = JSON.stringify({
                         id: resp.data.id,
                         username: resp.data.username,
-                        token: resp.data.token
                     })
                     localStorage.setItem('flyco', $info)
                     alert(`${resp.msg}，即将返回首页`)

@@ -1,6 +1,8 @@
 $(function() {
+    // $data = localStorage.getItem("flyco") ? JSON.parse(localStorage.getItem("flyco")) : {}
     $data = JSON.parse(localStorage.getItem("flyco"))
-        // console.log($data.id)
+
+    // console.log($data.id)
     $uid = $data.id //userID
     $info = JSON.parse(localStorage.getItem($uid)) //购物车数据{pid:num}
         // console.log($info)
@@ -90,10 +92,9 @@ $(function() {
                     showTotal()
                 } else {
                     $(".checkAll").prop("checked", false);
-                    if ($(".checkAll").prop("checked") == false) {
-                        $(".amount").text(0)
-                            // console.log(123)
-                    }
+                    // if ($(".checkAll").prop("checked") == false) {
+                    $(".amount").text(0)
+                        // }
                     showTotal()
                 }
             });

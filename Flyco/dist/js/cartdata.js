@@ -1,11 +1,10 @@
-$data = JSON.parse(localStorage.getItem("flyco")) //登录数据
-
 class Cart {
     constructor() {
         this.shop = $data ? JSON.parse(localStorage.getItem($data.id)) : {}
     }
     saveData(pid, num, isTrue) {
         //判断是否登录
+        $data = JSON.parse(localStorage.getItem("flyco")) //登录数据
         if ($data) {
             // console.log("已登录")
             //找到对应的登录账号

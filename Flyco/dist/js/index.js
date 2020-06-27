@@ -70,6 +70,11 @@ $(function() {
     $(".exit").click(function() {
         localStorage.removeItem('flyco')
         $(".login").removeClass("islogin")
+        $(".null").show()
+        $(".carList").hide()
+        $(".scnum").hide()
+            // $(".shopInfo").hide()
+            // $(".scNull").show()
     })
 
     $(".loreg").mouseover(function() {
@@ -79,7 +84,8 @@ $(function() {
     })
 
     /*购物车图标数字 scnum */
-    $info = JSON.parse(localStorage.getItem($data.id))
+    // $info = JSON.parse(localStorage.getItem($data.id))
+    $info = $data ? JSON.parse(localStorage.getItem($data.id)) : {}
 
     function scnum() {
         $scnum = 0
@@ -101,7 +107,8 @@ $(function() {
 
     $(".shopCar").hover(function() {
         $(".scInfo").show()
-        $info = JSON.parse(localStorage.getItem($data.id))
+        $data = localStorage.getItem("flyco") ? JSON.parse(localStorage.getItem("flyco")) : {}
+        $info = $data ? JSON.parse(localStorage.getItem($data.id)) : {}
 
         $scnum = 0
         for (var key in $info) {
@@ -131,7 +138,7 @@ $(function() {
                         }
                     }
                 }
-                console.log(newArr)
+                // console.log(newArr)
                 var str = ''
                 var allPrice = 0
                 newArr.forEach(function(item) {
@@ -173,7 +180,7 @@ $(function() {
                         }
                     }
                 }
-                console.log(newArr)
+                // console.log(newArr)
                 var str = ''
                 var allPrice = 0
                 newArr.forEach(function(item) {
