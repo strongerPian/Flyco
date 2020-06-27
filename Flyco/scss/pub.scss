@@ -155,6 +155,124 @@ header {
                         }
                     }
                 }
+                &:nth-child(4) {
+                    position: relative;
+                    .scnum {
+                        position: absolute;
+                        min-width: 20px;
+                        height: 20px;
+                        border-radius: 10px;
+                        padding: 0 1px;
+                        font-size: 12px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #fff;
+                        background-color: rgba(232, 120, 104, .85);
+                        top: -8px;
+                        right: -8px;
+                    }
+                    .scInfo {
+                        position: absolute;
+                        width: 340px;
+                        min-height: 170px;
+                        background-color: white;
+                        box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+                        top: 59px;
+                        left: -240px;
+                        display: none;
+                        .scNull {
+                            display: none;
+                            .scImg {
+                                width: 85px;
+                                height: 68px;
+                                margin: 30px auto 10px;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            p {
+                                font-size: 14px;
+                                text-align: center;
+                                color: grey;
+                            }
+                        }
+                        .shopInfo {
+                            // display: none;
+                            .shopTop {
+                                overflow: auto;
+                                max-height: 230px;
+                                width: 100%;
+                                padding: 10px 10px 0;
+                                box-sizing: border-box;
+                                .shopItem {
+                                    padding: 10px 0;
+                                    border-bottom: 1px dotted #e6e6e6;
+                                    height: 70px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .shopImg {
+                                        width: 65px;
+                                        height: 65px;
+                                        background-color: #BAB8BB;
+                                        img {
+                                            height: 100%;
+                                            width: 100%;
+                                            margin: 0 auto;
+                                        }
+                                    }
+                                }
+                                .shopText {
+                                    color: #959595;
+                                    font-size: 14px;
+                                    .shopName {
+                                        color: #333;
+                                        font-size: 16px;
+                                    }
+                                }
+                                .shopPrice {
+                                    color: #de3e26;
+                                    font-size: 14px;
+                                }
+                            }
+                            .shopBottom {
+                                width: 100%;
+                                height: 60px;
+                                box-sizing: border-box;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 10px;
+                                background: #eee;
+                                .shopAll {
+                                    font-size: 14px;
+                                    color: grey;
+                                    span {
+                                        color: #de3e26;
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                    }
+                                }
+                                a {
+                                    display: block;
+                                    width: 112px;
+                                    height: 40px;
+                                    border-radius: 4px;
+                                    overflow: hidden;
+                                    .goBuy {
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: #de3e26;
+                                        border: none;
+                                        outline: none;
+                                        color: white;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

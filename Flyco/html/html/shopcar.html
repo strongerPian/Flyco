@@ -23,6 +23,41 @@
                     <a href="">
                         <img src="../img/sc1.png" alt="">
                     </a>
+                    <div class="scnum">0</div>
+                    <!-- 小型购物车 -->
+                    <div class="scInfo">
+                        <div class="scNull">
+                            <div class="scImg">
+                                <img src="../img/sc.png" alt="">
+                            </div>
+                            <p>购物车中还没有商品,赶快选购吧!!!</p>
+                        </div>
+                        <div class="shopInfo">
+                            <div class="shopTop">
+
+                                <!-- <div class="shopItem">
+                                    <div class="shopImg">
+                                        <img src="img/shaver1.png" alt="">
+                                    </div>
+                                    <div class="shopText">
+                                        <p class="shopName">理发器FC5910</p>
+                                        × <span class="shopNum">3</span>
+                                    </div>
+                                    <div class="shopPrice">￥ <span>89.00</span></div>
+                                </div> -->
+
+                            </div>
+                            <div class="shopBottom">
+                                <div class="shopAll">
+                                    商品总计<span>￥</span>
+                                    <span class="shopPriceAll">0.00</span>
+                                </div>
+                                <a href="shopcar.html">
+                                    <button class="goBuy">查看购物车</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="loreg">
                     <a href="../html/login.html">
@@ -102,7 +137,7 @@
                                 <img src="../img/shaver1.png" alt="" class="infoImg">
                             </a>
                             <div class="listText">
-                                <a href="">理发器FC1</a><br>
+                                <b>理发器FC1</b><br>
                                 <span>微调剪发长度 / 可替换定长梳 / 充插两用</span>
                             </div>
                         </div>
@@ -138,13 +173,24 @@
                         <span class="amount">0.00</span>
                     </div>
                     <button class="js">
-                            结算 <span>(4)</span>
+                            结算 
+                            <!-- (<span>4</span>) -->
                         </button>
                 </div>
             </div>
 
 
         </div>
+        <div class="null main">
+            <div class="scImg">
+                <img src="../img/sc.png" alt="">
+            </div>
+            <p>购物车空空如也~</p>
+            <a href="list.html">
+                <button class="goBuy">去选购</button>
+            </a>
+        </div>
+
     </div>
 
     <!-- FOOTER -->
@@ -200,9 +246,7 @@
     <script src="../js/item.js"></script>
     <script src="../js/shopcar.js"></script>
     <script src="../js/cartdata.js"></script>
-    <script>
-        let cart = new Cart()
-    </script>
+
 </body>
 
 </html>

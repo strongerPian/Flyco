@@ -19,6 +19,7 @@ $(function() {
 
 
     /* headList*/
+    //首页
     $.ajax({
         type: "get",
         url: "data/data.json",
@@ -35,6 +36,7 @@ $(function() {
         }
     });
 
+    //子页
     $.ajax({
         type: "get",
         url: "../data/data.json",
@@ -62,10 +64,6 @@ $(function() {
     /*判断登录状态*/
     $data = JSON.parse(localStorage.getItem("flyco"))
     if ($data) {
-
-        // user.classList.add('islogin')
-        // b.innerHTML = username
-
         $(".login").addClass("islogin")
         $(".loginOff").find("b").text($data.username)
     }
@@ -79,6 +77,137 @@ $(function() {
     }).mouseleave(() => {
         $(".login").hide()
     })
+
+    /*购物车图标数字 scnum */
+    $info = JSON.parse(localStorage.getItem($data.id))
+
+    function scnum() {
+        $scnum = 0
+        for (var key in $info) {
+            $scnum += $info[key]
+        }
+        // console.log($scnum)
+        if ($scnum < 1) {
+            $(".scnum").hide()
+        } else {
+            $(".scnum").show().text($scnum)
+        }
+    }
+    scnum()
+
+
+    /*小型购物车 渲染 */
+
+
+    $(".shopCar").hover(function() {
+        $(".scInfo").show()
+        $info = JSON.parse(localStorage.getItem($data.id))
+
+        $scnum = 0
+        for (var key in $info) {
+            $scnum += $info[key]
+        }
+        if ($scnum < 1) {
+            $(".shopInfo").hide()
+            $(".scNull").show()
+        } else {
+            $(".shopInfo").show()
+            $(".scNull").hide()
+        }
+
+        //首页
+        $.ajax({
+            type: "get",
+            url: "../data/data.json",
+            success: function(resp) {
+                var newArr = []
+                for (var key in resp) {
+                    for (var i = 0; i < resp[key].length; i++) {
+                        for (var pid in $info) {
+                            if (resp[key][i].productSn == pid) {
+                                newArr.push(resp[key][i])
+                                break;
+                            }
+                        }
+                    }
+                }
+                console.log(newArr)
+                var str = ''
+                var allPrice = 0
+                newArr.forEach(function(item) {
+                    str += `<div class="shopItem">
+                    <div class="shopImg">
+                        <img src="${item.pic}" alt="">
+                    </div>
+                    <div class="shopText">
+                        <p class="shopName">${item.name}</p>
+                        × <span class="shopNum">${$info[item.productSn]}</span>
+                    </div>
+                    <div class="shopPrice">￥ <span>${item.promotionPrice}</span></div>
+                </div>`
+
+                    allPrice += $info[item.productSn] * item.promotionPrice
+                })
+
+                // console.log(allPrice)
+                $(".shopTop").html(str)
+                $(".shopPriceAll").text(allPrice)
+
+
+            }
+        });
+
+        //子页
+        $.ajax({
+            type: "get",
+            url: "data/data.json",
+            success: function(resp) {
+                var newArr = []
+                for (var key in resp) {
+                    for (var i = 0; i < resp[key].length; i++) {
+                        for (var pid in $info) {
+                            if (resp[key][i].productSn == pid) {
+                                newArr.push(resp[key][i])
+                                break;
+                            }
+                        }
+                    }
+                }
+                console.log(newArr)
+                var str = ''
+                var allPrice = 0
+                newArr.forEach(function(item) {
+                    str += `<div class="shopItem">
+                    <div class="shopImg">
+                        <img src="${item.pic}" alt="">
+                    </div>
+                    <div class="shopText">
+                        <p class="shopName">${item.name}</p>
+                        × <span class="shopNum">${$info[item.productSn]}</span>
+                    </div>
+                    <div class="shopPrice">￥ <span>${item.promotionPrice}</span></div>
+                </div>`
+                    allPrice += $info[item.productSn] * item.promotionPrice
+                })
+                $(".shopTop").html(str)
+                $(".shopPriceAll").text(allPrice)
+
+            }
+        });
+
+    }, function() {
+        $(".scInfo").hide()
+    })
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -171,7 +300,7 @@ $(function() {
     /*封装点击跳转详情页 */
     $reload = function() {
         $attr = $(this).attr("data-id")
-        console.log($attr)
+            // console.log($attr)
         window.location = "html/item.html?id=" + $attr
     }
 
@@ -357,9 +486,6 @@ $(function() {
     //     $pid = $(this).attr("data-id")
     //     console.log($pid)
     // })
-
-
-
 
 
 

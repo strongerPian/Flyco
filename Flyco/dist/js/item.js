@@ -51,7 +51,7 @@ $(function() {
                    <p class="desc">${shop.subTitle}</p>
                    <div class="infoTime">
                        <span>口碑推荐  净界出色</span>
-                       <span>仅剩07天11时13分13秒</span>
+                       <span>仅剩02天11时13分13秒</span>
                    </div>
                    <div class="infoItem">
                        <div class="infoItemL">
@@ -156,15 +156,13 @@ $(function() {
                     })
                 })
 
+
             /*bottomImg */
             $(".imgItem").find("img").hover(function() {
                 $img = $(this).attr("src")
                 $(".big").find(".img").attr("src", $img)
                 $(".small").find(".img").attr("src", $img)
             })
-
-
-
 
 
             //点击按钮加减改
@@ -190,13 +188,8 @@ $(function() {
             });
 
 
-
             /*添加购物车 */
             $data = JSON.parse(localStorage.getItem("flyco")) //登录数据
-            console.log($data)
-
-
-
 
 
             let cart = new Cart()
@@ -204,40 +197,8 @@ $(function() {
                 cart.saveData(pid, Number($(".num").val()), false)
             })
 
-
+            // $(".addCar").on("click", cart.saveData(pid, Number($(".num").val()), false))
 
         }
     });
-
-    // class Cart {
-    //     constructor() {
-    //         this.shop = localStorage.getItem($data.id) ? JSON.parse(localStorage.getItem($data.id)) : {}
-    //     }
-    //     saveData(pid, num) {
-    //         //判断是否登录
-    //         if ($data) {
-    //             console.log("已登录")
-    //                 //找到对应的登录账号
-    //                 //判断是否是第一次添加商品
-    //             this.shop = localStorage.getItem($data.id) ? JSON.parse(localStorage.getItem($data.id)) : {}
-    //             if (!this.shop[pid]) {
-    //                 this.shop[pid] = Number($(".num").val())
-
-    //             } else {
-
-    //                 this.shop[pid] += Number($(".num").val())
-    //             }
-    //             console.log(this.shop)
-    //                 // $shop = JSON.stringify({
-    //                 //     id: pid,
-    //                 //     num: $(".num").val()
-    //                 // })
-    //             localStorage.setItem($data.id, JSON.stringify(this.shop))
-
-
-    //         }
-    //     }
-    // }
-
-
 })

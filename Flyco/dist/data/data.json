@@ -425,175 +425,188 @@
             "pic": "https://pic.flyco.net.cn/mall/goods/FS375/b85eef7e5f2645448d4c042cb9921351.png"
         },
         {
-            "productSn": "FH6276",
-            "price": "248.00",
-            "newStatus": "1",
-            "subTitle": "温和快干 / 莫兰迪色 / 多档调节",
-            "promotionPrice": "89.00",
-            "name": "电吹风FH6276",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FH6276/main/05ee5f427e984f4dae12b0fc7be5937f.png"
+            "productSn": "FS2009",
+            "price": "73.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "3组合孔 / 安全保护门 / 全长3米",
+            "promotionPrice": "35.00",
+            "name": "插座FS2009",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS2009/a78fb69f425041f6827caa348fb00fb1.png"
         },
         {
-            "productSn": "FS372",
-            "price": "213.00",
+            "productSn": "FS362",
+            "price": "148.00",
+            "recommandStatus": "0",
             "newStatus": "0",
-            "subTitle": "3刀头浮动 / 全身水洗 / 弹出式鬓角刀",
-            "promotionPrice": "89.00",
-            "name": "剃须刀FS372",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS372/main/b2fb79b1c21a4d0eb481003c0bd33cc8.png"
+            "subTitle": "强劲动力 / 充电显示灯 / 超长待机时间",
+            "promotionPrice": "59.00",
+            "name": "剃须刀FS362",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS362/ad0f8062cec64479994e2878643becb5.png"
         }, {
-            "productSn": "FS339",
-            "price": "248.00",
+            "productSn": "FS808",
+            "price": "138.00",
+            "recommandStatus": "0",
             "newStatus": "0",
-            "subTitle": "全身水洗 / 1小时速充 / 浮动贴面系统",
+            "subTitle": "1小时速充 / 弹出式鬓角刀 / 智能防夹",
+            "promotionPrice": "55.00",
+            "name": "剃须刀FS808",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS808/main/8ddb4a0db882456080d132152c7fbacf.png"
+        }, {
+            "productSn": "FS370",
+            "price": "223.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "全身水洗 / 增加50%接触面 / 智能充电显示",
             "promotionPrice": "99.00",
-            "name": "智能剃须刀FS339",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS339/main/FS339-透明图_1592478020149.png"
-        }, {
-            "productSn": "FC5902",
-            "price": "283.00",
+            "name": "剃须刀FS370",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS370/eb17668381604c70815aba5311e32d91.png"
+        },
+        {
+            "productSn": "FH6106",
+            "price": "448.00",
+            "recommandStatus": "0",
             "newStatus": "0",
-            "subTitle": "合金刀头 / 强劲电机 / 充插两用",
-            "promotionPrice": "129.00",
-            "name": "理发器FC5902",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FC5902/b9d6f947e3864948b8ff31127cc24784.png"
+            "subTitle": "专业沙龙 / 负离子沁润 / 热量均衡技术",
+            "promotionPrice": "179.00",
+            "name": "电吹风FH6106",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FH6106/1e53e3ad7c10464fa042fc6705926058.png"
         }, {
-            "productSn": "FS375",
-            "price": "338.00",
+            "productSn": "FH6105",
+            "price": "348.00",
+            "recommandStatus": "0",
             "newStatus": "0",
-            "subTitle": "3刀头 / 1小时快充 / USB充电",
+            "subTitle": "专业AC电机 / 2200W大功率 / 负离子科技",
             "promotionPrice": "139.00",
-            "name": "智能剃须刀FS375",
+            "name": "电吹风FH6105",
+            "hotStatus": "0",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FH6105/21ceaac00ab94a91ae84af0738e04865.png"
+        }, {
+            "productSn": "FH6257",
+            "price": "100.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "宿舍家用 / 折叠手柄 / 动力强劲",
+            "promotionPrice": "45.00",
+            "name": "电吹风FH6257",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FH6257/518ecccbf0c64111a1f243e36e41be0c.png"
+        },
+        {
+            "productSn": "FC5808",
+            "price": "150.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "微调剪发长度 / 可替换定长梳 / 充插两用",
+            "promotionPrice": "75.00",
+            "name": "理发器FC5808",
+            "hotStatus": "0",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FC5808/0d379ca63cdf4e089a02b001bb7f2c5e.png"
+        }, {
+            "productSn": "FC5806",
+            "price": "145.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "低噪音设计 / 智能限位发梳 / 微调滑推按钮",
+            "promotionPrice": "69.90",
+            "name": "理发器FC5806",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FC5806/97d3823fd6f843258f826040e490bcd6.png"
+        }, {
+            "productSn": "FC5910",
+            "price": "248.00",
+            "recommandStatus": "0",
+            "newStatus": "1",
+            "subTitle": "锐角刀头 / 超长续航 / USB充电",
+            "promotionPrice": "89.00",
+            "name": "理发器FC5910",
+            "hotStatus": "0",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FC5910/main/db475ca7d6e0480fae1590ed8f6e37b9.png"
+        },
+        {
+            "productSn": "FR5218",
+            "price": "100.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "精磨不锈钢刀网 / 特质三叶旋风刀片 / 双倍动力系统",
+            "promotionPrice": "39.00",
+            "name": "毛球修剪器FR5218",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FR5218/9ff21c38e86744f38bb360b596816678.png"
+        }, {
+            "productSn": "FR5226",
+            "price": "173.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "240分钟持久续航 / 智能电量显示 / 双重保护",
+            "promotionPrice": "69.00",
+            "name": "毛球修剪器FR5226",
             "hotStatus": "1",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS375/b85eef7e5f2645448d4c042cb9921351.png"
+            "pic": "https://pic.flyco.net.cn/mall/goods/FR5226/5b7f6f7754bf437c9fd82cd057f314a9.png"
+        }, {
+            "productSn": "FR5222",
+            "price": "80.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "不变形不生锈 / 2W超大功率 / 双倍电池动力",
+            "promotionPrice": "33.00",
+            "name": "毛球修剪器FR5222",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FR5222/4def7e917e6a4dffa2956cf97c42babc.png"
         },
         {
-            "productSn": "FH6276",
-            "price": "248.00",
-            "newStatus": "1",
-            "subTitle": "温和快干 / 莫兰迪色 / 多档调节",
-            "promotionPrice": "89.00",
-            "name": "电吹风FH6276",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FH6276/main/05ee5f427e984f4dae12b0fc7be5937f.png"
+            "productSn": "FS2008",
+            "price": "48.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "3组合孔 / 安全保护门 / 全长1.8米",
+            "promotionPrice": "28.00",
+            "name": "插座FS2008",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS2008/c59ab8dc961940e383db588e291b2081.png"
         },
         {
-            "productSn": "FS372",
+            "productSn": "FS2016",
+            "price": "88.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "6插位 / 加粗线芯 / 全长3米",
+            "promotionPrice": "41.00",
+            "name": "插座FS2016",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS2016/b63f6eaee9a54f7b956dce13ffc701fb.png"
+        },
+        {
+            "productSn": "FS2012",
+            "price": "88.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "4组合孔 / 安全保护门 / 全长3米",
+            "promotionPrice": "38.00",
+            "name": "插座FS2012",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FS2012/fbcf88953cf141cda4d3823442d1b53d.png"
+        },
+        {
+            "productSn": "FI9810",
+            "price": "673.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "强劲蒸汽 / 自动供水 / 五档调节",
+            "promotionPrice": "269.00",
+            "name": "挂烫机FI9810",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FI9810/becb5d26689c48ea871e6261e6b1cba0.png"
+        }, {
+            "productSn": "FI9819",
+            "price": "473.00",
+            "recommandStatus": "0",
+            "newStatus": "0",
+            "subTitle": "98℃恒温高温杀菌 / 45秒快速出蒸汽 / 七孔聚能喷头",
+            "promotionPrice": "189.00",
+            "name": "挂烫机FI9819",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FI9819/d98bcffa26e44c8d9568c8e1e7e7809e.png"
+        }, {
+            "productSn": "FI9310",
             "price": "213.00",
+            "recommandStatus": "0",
             "newStatus": "0",
-            "subTitle": "3刀头浮动 / 全身水洗 / 弹出式鬓角刀",
-            "promotionPrice": "89.00",
-            "name": "剃须刀FS372",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS372/main/b2fb79b1c21a4d0eb481003c0bd33cc8.png"
-        }, {
-            "productSn": "FS339",
-            "price": "248.00",
-            "newStatus": "0",
-            "subTitle": "全身水洗 / 1小时速充 / 浮动贴面系统",
+            "subTitle": "黄金特氟龙底板 / 喷水-爆炸蒸汽双按钮 / 支持垂直挂烫",
             "promotionPrice": "99.00",
-            "name": "智能剃须刀FS339",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS339/main/FS339-透明图_1592478020149.png"
-        }, {
-            "productSn": "FC5902",
-            "price": "283.00",
-            "newStatus": "0",
-            "subTitle": "合金刀头 / 强劲电机 / 充插两用",
-            "promotionPrice": "129.00",
-            "name": "理发器FC5902",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FC5902/b9d6f947e3864948b8ff31127cc24784.png"
-        }, {
-            "productSn": "FS375",
-            "price": "338.00",
-            "newStatus": "0",
-            "subTitle": "3刀头 / 1小时快充 / USB充电",
-            "promotionPrice": "139.00",
-            "name": "智能剃须刀FS375",
-            "hotStatus": "1",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS375/b85eef7e5f2645448d4c042cb9921351.png"
-        },
-        {
-            "productSn": "FH6276",
-            "price": "248.00",
-            "newStatus": "1",
-            "subTitle": "温和快干 / 莫兰迪色 / 多档调节",
-            "promotionPrice": "89.00",
-            "name": "电吹风FH6276",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FH6276/main/05ee5f427e984f4dae12b0fc7be5937f.png"
-        },
-        {
-            "productSn": "FS372",
-            "price": "213.00",
-            "newStatus": "0",
-            "subTitle": "3刀头浮动 / 全身水洗 / 弹出式鬓角刀",
-            "promotionPrice": "89.00",
-            "name": "剃须刀FS372",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS372/main/b2fb79b1c21a4d0eb481003c0bd33cc8.png"
-        }, {
-            "productSn": "FS339",
-            "price": "248.00",
-            "newStatus": "0",
-            "subTitle": "全身水洗 / 1小时速充 / 浮动贴面系统",
-            "promotionPrice": "99.00",
-            "name": "智能剃须刀FS339",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS339/main/FS339-透明图_1592478020149.png"
-        }, {
-            "productSn": "FC5902",
-            "price": "283.00",
-            "newStatus": "0",
-            "subTitle": "合金刀头 / 强劲电机 / 充插两用",
-            "promotionPrice": "129.00",
-            "name": "理发器FC5902",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FC5902/b9d6f947e3864948b8ff31127cc24784.png"
-        }, {
-            "productSn": "FS375",
-            "price": "338.00",
-            "newStatus": "0",
-            "subTitle": "3刀头 / 1小时快充 / USB充电",
-            "promotionPrice": "139.00",
-            "name": "智能剃须刀FS375",
-            "hotStatus": "1",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS375/b85eef7e5f2645448d4c042cb9921351.png"
-        },
-        {
-            "productSn": "FH6276",
-            "price": "248.00",
-            "newStatus": "1",
-            "subTitle": "温和快干 / 莫兰迪色 / 多档调节",
-            "promotionPrice": "89.00",
-            "name": "电吹风FH6276",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FH6276/main/05ee5f427e984f4dae12b0fc7be5937f.png"
-        },
-        {
-            "productSn": "FS372",
-            "price": "213.00",
-            "newStatus": "0",
-            "subTitle": "3刀头浮动 / 全身水洗 / 弹出式鬓角刀",
-            "promotionPrice": "89.00",
-            "name": "剃须刀FS372",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS372/main/b2fb79b1c21a4d0eb481003c0bd33cc8.png"
-        }, {
-            "productSn": "FS339",
-            "price": "248.00",
-            "newStatus": "0",
-            "subTitle": "全身水洗 / 1小时速充 / 浮动贴面系统",
-            "promotionPrice": "99.00",
-            "name": "智能剃须刀FS339",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FS339/main/FS339-透明图_1592478020149.png"
-        }, {
-            "productSn": "FH6276",
-            "price": "248.00",
-            "newStatus": "1",
-            "subTitle": "温和快干 / 莫兰迪色 / 多档调节",
-            "promotionPrice": "89.00",
-            "name": "电吹风FH6276",
-            "hotStatus": "0",
-            "pic": "https://pic.flyco.net.cn/mall/goods/FH6276/main/05ee5f427e984f4dae12b0fc7be5937f.png"
+            "name": "电熨斗FI9310",
+            "pic": "https://pic.flyco.net.cn/mall/goods/FI9310/4591c40bab9644cd9f0b1c728a272718.png"
         }
     ],
     "hairList": [{
@@ -653,7 +666,7 @@
         "recommandStatus": "0",
         "newStatus": "1",
         "subTitle": "陶瓷漆涂层 / 防烫支架 / 360°旋转尾线",
-        "promotionPrice": "39.90",
+        "promotionPrice": "39.00",
         "name": "卷直烫发器FH6856",
         "pic": "https://pic.flyco.net.cn/mall/goods/FH6856/5a51f899e62f4979a106cbfe9edcc564.png"
 
@@ -663,20 +676,20 @@
         "recommandStatus": "0",
         "newStatus": "1",
         "subTitle": "均匀加热 / 防烫支架 / 恒温护发",
-        "promotionPrice": "39.90",
+        "promotionPrice": "39.00",
         "name": "卷直烫发器FH6855",
-        "pic": "https://pic.flyco.net.cn/mall/goods/FH6855/a477e53f730b4cbc9bbba3a18b440a9d.png"
+        "pic": "https://pic.flyco.net.cn/mall/cms/pc/home/hairiron/FH6855.jpg"
 
     }, {
-        "productSn": "FH6618",
+        "productSn": "FH6850",
         "price": "175.00",
         "recommandStatus": "0",
         "newStatus": "0",
         "subTitle": "强劲大功率 / 负离子护发 / 防过热保护",
-        "promotionPrice": "69.90",
-        "name": "电吹风FH6618",
+        "promotionPrice": "69.00",
+        "name": "卷直烫发器FH6850",
         "hotStatus": "1",
-        "pic": "https://pic.flyco.net.cn/mall/goods/FH6618/main/0252a05dfbf3469099076e0da963abf1.png"
+        "pic": "https://pic.flyco.net.cn/mall/cms/pc/home/hairiron/FH6875.jpg"
 
     }, {
         "productSn": "FH6878",
@@ -684,9 +697,9 @@
         "recommandStatus": "0",
         "newStatus": "0",
         "subTitle": "恒温护发 / 转尾电源线 / 防烫支架",
-        "promotionPrice": "46.90",
+        "promotionPrice": "46.00",
         "name": "卷直烫发器FH6878",
-        "pic": "https://pic.flyco.net.cn/mall/goods/FH6878/1ea079d9a0a84420b9b95027c4641144.png"
+        "pic": "https://pic.flyco.net.cn/mall/cms/pc/home/hairiron/FH6878.jpg"
 
     }, {
         "productSn": "FH6811",
@@ -696,7 +709,7 @@
         "subTitle": "快速加热 / 防烫支架 / 恒温护发",
         "promotionPrice": "39.00",
         "name": "卷直发器FH6811",
-        "pic": "https://pic.flyco.net.cn/mall/goods/FH6811/f7c1308f39b34de4acb614c8e8af7b7d.png"
+        "pic": "https://pic.flyco.net.cn/mall/cms/pc/home/hairiron/FH6811.jpg"
 
     }],
     "trimmerList": [{

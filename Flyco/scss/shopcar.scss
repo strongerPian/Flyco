@@ -1,10 +1,44 @@
 .shopcar {
     margin-top: 70px;
     overflow: hidden;
+    .null {
+        margin: 20px auto 70px;
+        height: 440px;
+        border: 1px solid #ddd;
+        .scImg {
+            width: 125px;
+            height: 99px;
+            margin: 50px auto 30px;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            text-align: center;
+            color: #979797;
+        }
+        a {
+            margin: 50px auto 30px;
+            display: block;
+            width: 130px;
+            height: 36px;
+            border-radius: 4px;
+            overflow: hidden;
+            .goBuy {
+                width: 100%;
+                height: 100%;
+                background-color: #F56C6C;
+                border: none;
+                outline: none;
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
     .carList {
         margin: 20px auto 70px;
         min-height: 220px;
-        // background-color: pink;
+        display: none;
         .listHead {
             display: flex;
             align-items: center;
@@ -79,13 +113,14 @@
                             vertical-align: middle;
                         }
                     }
-                    .aImg {
+                    .bImg {
                         margin: 0 25px;
                         display: flex;
                         width: 100px;
                         height: 100px;
                         justify-content: center;
                         background-color: #BAB8BB;
+                        cursor: pointer;
                         .infoImg {
                             // width: 100%;
                             height: 100%;
@@ -93,10 +128,11 @@
                     }
                     .listText {
                         width: 256px;
-                        a {
+                        b {
                             font-size: 18px;
                             line-height: 42px;
                             color: #333;
+                            cursor: pointer;
                         }
                         span {
                             font-size: 14px;
