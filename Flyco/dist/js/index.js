@@ -209,15 +209,6 @@ $(function() {
 
 
 
-
-
-
-
-
-
-
-
-
     /*轮播图*/
     $("#play ul li:first").clone(true).appendTo('#play ul') //在图片末尾追加第一张图片
     $("#play ul").css({

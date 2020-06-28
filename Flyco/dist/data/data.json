@@ -183,7 +183,7 @@
             "picWap": "https://pic.flyco.net.cn/mall/goods/FS2090/914c1c4106e442569ded60a8fb339dc5.jpg",
             "productSn": "FS2090",
             "price": 199,
-            "promotionPrice": 59.9,
+            "promotionPrice": 59.0,
             "giftGrowth": 0,
             "giftPoint": 0,
             "subTitle": "1.8米线 / 加粗线芯 / 耐插拔",
@@ -507,7 +507,7 @@
             "recommandStatus": "0",
             "newStatus": "0",
             "subTitle": "低噪音设计 / 智能限位发梳 / 微调滑推按钮",
-            "promotionPrice": "69.90",
+            "promotionPrice": "69.00",
             "name": "理发器FC5806",
             "pic": "https://pic.flyco.net.cn/mall/goods/FC5806/97d3823fd6f843258f826040e490bcd6.png"
         }, {
@@ -645,7 +645,7 @@
         "recommandStatus": "0",
         "newStatus": "0",
         "subTitle": "健康柔风 / 强劲电机 / 折叠手柄",
-        "promotionPrice": "49.90",
+        "promotionPrice": "49.00",
         "name": "电吹风FH6232",
         "hotStatus": "0",
         "pic": "https://pic.flyco.net.cn/mall/goods/FH6232/main/6c0b1a54f53d45a296e9a02833828b3e.png"
@@ -655,7 +655,7 @@
         "recommandStatus": "0",
         "newStatus": "0",
         "subTitle": "强劲大功率 / 负离子护发 / 防过热保护",
-        "promotionPrice": "69.90",
+        "promotionPrice": "69.00",
         "name": "电吹风FH6618",
         "hotStatus": "1",
         "pic": "https://pic.flyco.net.cn/mall/goods/FH6618/main/0252a05dfbf3469099076e0da963abf1.png"
@@ -770,7 +770,7 @@
         "recommandStatus": "0",
         "newStatus": "1",
         "subTitle": "1小时快充 / 即插即用 / Type-C充电",
-        "promotionPrice": "39.90",
+        "promotionPrice": "39.00",
         "name": "毛球修剪器FR5235",
         "pic": "https://pic.flyco.net.cn/mall/goods/FR5235/5326484a69b444db8505101a79e71c8c.png"
     }]
